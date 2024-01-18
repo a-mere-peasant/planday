@@ -4,6 +4,7 @@ import { render } from 'solid-js/web';
 
 import App from './App';
 import { ColorModeProvider } from '@kobalte/core';
+import { TaskContextProvider } from './context/TaskContext';
 
 const root = document.getElementById('root');
 
@@ -13,4 +14,8 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <ColorModeProvider defaultScheme="dark"><App /></ColorModeProvider>, root!);
+render(() => <ColorModeProvider defaultScheme="dark">
+			<TaskContextProvider>
+				<App />
+			</TaskContextProvider>
+		</ColorModeProvider>, root!);

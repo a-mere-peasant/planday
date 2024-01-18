@@ -8,6 +8,9 @@ dependencies:
   '@kobalte/core':
     specifier: ^0.11.2
     version: 0.11.2(solid-js@1.7.6)
+  '@solid-primitives/storage':
+    specifier: ^2.1.1
+    version: 2.1.1(solid-js@1.7.6)
   '@types/node':
     specifier: ^20.11.0
     version: 20.11.0
@@ -17,6 +20,9 @@ dependencies:
   clsx:
     specifier: ^2.1.0
     version: 2.1.0
+  solid-icons:
+    specifier: ^1.1.0
+    version: 1.1.0(solid-js@1.7.6)
   solid-js:
     specifier: ^1.7.6
     version: 1.7.6
@@ -984,6 +990,19 @@ packages:
       solid-js: 1.7.6
     dev: false
 
+  /@solid-primitives/storage@2.1.1(solid-js@1.7.6):
+    resolution: {integrity: sha512-GDbELt4Xjp0ySsHZ+RHzup0YIl1epHz8A2SVQYNRZPgkIEJk0Fyrt2vW6Etym2yUruTt8yT3d8106LVb71KIWg==}
+    peerDependencies:
+      solid-js: ^1.6.12
+      solid-start: '>=0.2.26'
+    peerDependenciesMeta:
+      solid-start:
+        optional: true
+    dependencies:
+      '@solid-primitives/utils': 6.2.1(solid-js@1.7.6)
+      solid-js: 1.7.6
+    dev: false
+
   /@solid-primitives/styles@0.0.108(solid-js@1.7.6):
     resolution: {integrity: sha512-kdCWJ3seO4Z0dluBuApuaD+kYLnVCFZIAJGhfhS2POtjLRAmKc/VFwimIn48PUCwoa6vmVS52V1GIw51nK/85g==}
     peerDependencies:
@@ -1675,6 +1694,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /solid-icons@1.1.0(solid-js@1.7.6):
+    resolution: {integrity: sha512-IesTfr/F1ElVwH2E1110s2RPXH4pujKfSs+koT8rwuTAdleO5s26lNSpqJV7D1+QHooJj18mcOiz2PIKs0ic+A==}
+    peerDependencies:
+      solid-js: '*'
+    dependencies:
+      solid-js: 1.7.6
+    dev: false
 
   /solid-js@1.7.6:
     resolution: {integrity: sha512-DXVOTjUh/bIAhE0fIqu3ezGLyQaez7v8EOw3uPLIi87DmLjg+hsuCAgKyNIZ+o4jUetOk3ZORccvJmE1yZUk8g==}

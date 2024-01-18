@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.min-h-50dvh{
+	min-height:50dvh;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
